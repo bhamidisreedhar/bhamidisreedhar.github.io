@@ -1,0 +1,53 @@
+body {color: #000033; background-color: Lightgray;}
+
+/* toggle link */
+.toggle {color: DodgerBlue;}
+.toggle:hover {text-decoration: none; color: blue;}
+
+#wrapper {width:950px;}
+
+/* title */
+#title {width:900px; margin:0px 0px 30px 30px;
+        font-family:Arial; font-size:25px; float:left;}
+/*
+#title > h1 {color: white; text-shadow:
+               #8be0f4 2px 2px 0px,
+               #8be0f4 -2px 2px 0px,
+               #8be0f4 -2px -2px 0px,
+               #8be0f4 2px -2px 0px,
+               #8be0f4 2px 0px 0px,
+               #8be0f4 0px 2px 0px,
+               #8be0f4 -2px 0px 0px,
+               #8be0f4 0px -2px 0px;}
+*/
+#title > p  {padding-left:30px; margin:0px 0px 5px 0px;}
+/*
+#W1 {color: mediumblue; text-shadow: 1px 2px 1px black;}
+#W2 {color: gold; text-shadow: 1px 2px 1px black;}
+#W3 {color: crimson; text-shadow: 1px 2px 1px black;}
+*/
+
+
+/* schedule */
+#schedule {width:900px; margin:0px 0px 0px 0px;
+              padding-left:30px; font-family: Helvetica Neue, Arial, sans-serif;
+              font-size:16px; float:left; line-height:1.4;}
+#schedule > div  {padding-left:30px; margin:30px 0px 40px 0px;}
+.talk > p  {margin:5px 0px 5px 0px; font-size: 16px;}
+.abstract {width:700px; font-size: 16px;}
+
+/* past seminars */
+#pastseminars {width:900px; margin:0px 0px 0px 0px;
+        padding-left:30px; font-family: Helvetica Neue, Arial, sans-serif;
+        font-size:16px; float:left; line-height:1.4;}
+#pastseminars > div  {padding-left:30px; margin:-10px 0px -10px 0px;}
+.past {width:900px; margin:0px 0px 0px 0px;
+        padding-left:30px; font-family: Helvetica Neue, Arial, sans-serif;
+        font-size:16px; float:left; line-height:1.4;}
+.past > div  {padding-left: 0px; margin:30px 0px 40px 0px;}
+.talk > p  {margin:5px 0px 5px 0px; font-size: 16px;}
+.abstract {width:700px; font-size: 16px;}
+
+
+/* emphasized notes */
+#emph {color: crimson;}
