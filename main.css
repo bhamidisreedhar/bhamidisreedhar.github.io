@@ -1,4 +1,4 @@
-body {color: #000033; background-color: antiquewhite;}
+body {color: #000033; background-color: ghostwhite;}
 
 /* toggle link */
 .toggle {color: DodgerBlue;}
@@ -50,4 +50,4 @@ body {color: #000033; background-color: antiquewhite;}
 
 
 /* emphasized notes */
-#emph {color: crimson;}
+#emph {color: black;}
