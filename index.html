@@ -1,35 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
+
     body {
+      box-sizing: border-box;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 48px 32px 64px;
       background-color: ghostwhite;
       font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
       color: black;
+      overflow-wrap: anywhere;
     }
+
     h1, h2, h3, p {
       color: black;
     }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: -0.7px;
+    }
+
+    h2 {
+      margin: 32px 0 13px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid #dedee5;
+      font-size: 21px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+    }
+
+    h3 {
+      margin: 20px 0 9px;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    h2 + h3 {
+      margin-top: 16px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      padding-left: 3px;
+    }
+
+    li + li {
+      margin-top: 9px;
+    }
+
+    a {
+      background-color: transparent;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+    }
+
     a:link {
       color: #670D0D;
-      background-color: transparent;
       text-decoration: none;
     }
+
     a:visited {
       color: #154704;
-      background-color: transparent;
       text-decoration: none;
     }
+
     a:hover {
       color: #737373;
-      background-color: transparent;
       text-decoration: underline;
     }
+
+    a:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 3px;
+      text-decoration: underline;
+    }
+
     a:active {
       color: #0000FF;
-      background-color: transparent;
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 28px 16px 44px;
+        line-height: 1.6;
+      }
+
+      h1 {
+        font-size: 29px;
+        letter-spacing: -0.5px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        font-size: 20px;
+      }
+
+      ul {
+        padding-left: 19px;
+      }
+
+      li {
+        padding-left: 1px;
+      }
+
+      li + li {
+        margin-top: 11px;
+      }
+    }
+
+    @media print {
+      body {
+        max-width: none;
+        padding: 0;
+        background-color: white;
+        font-size: 11pt;
+        line-height: 1.45;
+      }
+
+      h1 {
+        font-size: 22pt;
+      }
+
+      h2, h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      h2 {
+        margin-top: 18pt;
+        font-size: 14pt;
+      }
+
+      h3 {
+        font-size: 11pt;
+      }
+
+      li {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+
+      a:link, a:visited {
+        color: black;
+      }
     }
   </style>
 
@@ -61,7 +193,10 @@ I am interested in problems related to algebraic geometry. The questions that I 
 <li> Localization by 2-periodic complexes and virtual structure sheaves, with <a href="https://sites.google.com/view/jeongseokoh/"> Jeongseok Oh</a> ( Journal of the Institute of Mathematics of Jussieu 21, no. 5 (2022): 1477–1506)  <a href="https://doi.org/10.1017/S1474748020000626">[Journal]</a> <a href="https://arxiv.org/abs/1909.12164">[ArXiv]</a></li>
 <li> Virtual equivariant Grothendieck-Riemann-Roch formula, with <a href="https://charanyaravi.github.io/"> Charanya Ravi</a> ( Doc. Math., 26, 2061-2094 (2021))  <a href="https://www.elibm.org/article/10012176"> [Journal]</a>  <a href="https://arxiv.org/abs/2009.09697"> [ArXiv]</a> </li>
 <li> Riemann-Roch for stacky matrix factorizations, with <a href="https://sites.google.com/view/dongwookchoa/home">Dongwook Choa</a> and <a href="http://newton.kias.re.kr/~bumsig/"> Bumsig Kim</a>     (Forum of Mathematics, Sigma Volume 10 (2022)) <a href="https://doi.org/10.1017/fms.2022.99"> [Journal]</a> <a href="https://arxiv.org/abs/2202.04418"> [ArXiv]</a>  </li>
+<li> A Hochschild-Kostant-Rosenberg type theorem for coherent matrix factorizations, with Arnab Kundu  <a href="https://doi.org/10.48550/arXiv.2609.30018"> [ArXiv]</a>  </li>
 </ul>
+
+
 
 <h2>Short CV</h2>
 <ul>
@@ -69,7 +204,7 @@ I am interested in problems related to algebraic geometry. The questions that I 
   <li> October 2022 - January 2023: Visiting Scientist, Harish Chandra Research Institute (<a href="https://www.hri.res.in/">HRI</a>), Prayagraj (Allahabad), India. </li>
    <li> August 2021 - July 2022: Postdoctoral research associate,  IBS Center for Geometry and Physics (<a href="https://cgp.ibs.re.kr/">IBS-CGP</a>), Pohang, Republic of Korea. </li>
    <li> August 2017 - July 2021: Research Fellow (postdoc) at Korea Institute for Advanced Study (<a href="http://www.kias.re.kr/">KIAS</a>), Seoul, Republic of Korea. Under the mentorship of <a href="http://newton.kias.re.kr/~bumsig/"> Prof. Bumsig Kim</a>.</li>
-   <li> August 2011 - May 2017: Ph.D in Mathematics, <a href="http://www.math.tifr.res.in/"> School of Mathematics</a>,  Tata Institute of Fundamental Research (<a href="https://www.tifr.res.in">TIFR</a>), under the supervision of Prof. Amalendu Krishna.</li>
+   <li> August 2011 - May 2017: Ph.D in Mathematics, <a href="https://mathweb.tifr.res.in/"> School of Mathematics</a>,  Tata Institute of Fundamental Research (<a href="https://www.tifr.res.in">TIFR</a>), under the supervision of Prof. Amalendu Krishna.</li>
 </ul>
 
 
@@ -94,8 +229,9 @@ I am interested in problems related to algebraic geometry. The questions that I 
 
 <h2> Conferences </h2>
 <ul>
-<li>  <a href="https://www.icts.res.in/discussion-meeting/egc">Discussion Meeting on Enumerative Geometry and Categorification</a> </li> 
-<li> <a href="https://sites.google.com/view/hriconf2024/home">Workshop and Conference on Algebraic Geometry</a> </li> 
+  <li> <a href="https://sites.google.com/view/hrialgeom2026/home">Workshop on Algebraic Geometry, October 1 - 6, 2026</a> </li> 
+<li>  <a href="https://www.icts.res.in/discussion-meeting/egc">Discussion Meeting on Enumerative Geometry and Categorification, July 6 - 10, 2026</a> </li> 
+<li> <a href="https://sites.google.com/view/hriconf2024/home">Workshop and Conference on Algebraic Geometry, December 2 - 7, 2024</a> </li> 
 
 </ul>
 
